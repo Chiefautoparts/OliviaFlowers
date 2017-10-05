@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Delius Swash Caps', cursive;
+	font-family: 'Sail', cursive;
+	font-family: 'Mystery Quest', cursive;
+	font-family: 'Spirax', cursive;
+	font-family: 'Griffy', cursive;
+	font-family: 'Irish Grover', cursive;
+	font-family: 'Bonbon', cursive;
+	font-family: 'Ruge Boogie', cursive;
+	font-family: 'Flavors', cursive;
+	font-family: 'Butterfly Kids', cursive;
+
+}
+
+h1 {
+	font-family: 'Spirax', cursive;
+	font-size: 4em;
+}
+
+nav ul li{
+	display: inline;
+}
