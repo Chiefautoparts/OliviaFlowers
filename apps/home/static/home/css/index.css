@@ -23,9 +23,7 @@ h1 {
 	margin-left: 45%;
 }
 
-header {
-	
-}
+
 nav ul {
 	list-style: none;
 	text-align: center;
@@ -33,7 +31,7 @@ nav ul {
 	background-color: #000000;
 	color: #FFFFFF;
 	padding: 0;
-	margin-left: 45%;
+	
 } 
 
 nav li {
@@ -58,7 +56,7 @@ nav a:hover {
 	color: #000000;
 	font-family: 'Lobster', cursive;
 	font-weight: bolder;
-
+	
 
 }
 
@@ -102,4 +100,10 @@ nav li li {
 	nav li ul li {
 		display: block;
 	}
+}
+
+#contactUs p {
+	background-color: #000000;
+	max-width: 250px;
+	max-height: 250px;
 }
