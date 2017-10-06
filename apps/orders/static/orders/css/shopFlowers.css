@@ -1,0 +1,15 @@
+#rowOne {
+	background: #c4c4c4;
+	width: 475px;
+	margin: 0px auto;
+}
+
+#rowOne ul {
+	list-style: none;
+}
+
+#rowOne ul li {
+	display: inline-block;
+	text-align: center;
+	padding: 20px;
+}
