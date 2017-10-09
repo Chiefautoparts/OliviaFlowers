@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-	font-family: 'Spirax', cursive;
+	font-family: 'Ruge Boogie', cursive;
 	font-size: 5em;
 	margin-left: 45%;
 }
@@ -39,6 +39,7 @@ nav li {
 	font-size: 1.2em;
 	text-align: left;
 	line-height: 40px;
+	width: 450px;
 }
 
 nav a {
@@ -62,11 +63,12 @@ nav a:hover {
 
 nav li li {
 	font-size: 1em;
+	width: 300px;
 }
 
 @media screen and (min-width: 500px) {
 	nav li {
-		width: 130px;
+		width: 250px;
 		border-bottom: none;
 		height: 50px;
 		line-height: 50px;
@@ -102,8 +104,9 @@ nav li li {
 	}
 }
 
-#contactUs p {
+#contactUs{
 	background-color: #000000;
 	max-width: 250px;
 	max-height: 250px;
+	color: #ffffff
 }
