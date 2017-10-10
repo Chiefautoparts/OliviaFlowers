@@ -46,9 +46,9 @@ class Order(models.Model):
 	phoneNum = models.IntegerField()
 	email = models.CharField(max_length=255)
 	delivery = models.BooleanField(default=False)
-	address = models.CharField(max_length=255)
+	address = models.CharField(max_length=255, blank=True)
 	products = models.ForeignKey(Product, related_name="products")
-	date_requested = models.DateField()
+	date_requested = models.DateField(blank=True)
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
 

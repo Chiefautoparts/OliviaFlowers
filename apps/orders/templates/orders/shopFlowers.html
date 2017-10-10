@@ -21,6 +21,20 @@
 		</ul>
 	</nav>
 </article>
+<article>
+	<section>
+		<div>
+			{% if category %}{{category.name}}{% else %}Products{% endif %}
+
+			{% block context %}
+			<div id="product">
+				<img src="{{ product.image }}{{product.image.url}}{% endif %}" alt="">
+			</div>
+			{% endblock context %}
+		</div>
+	</section>
+</article>
+
 <article id="flowerCatalog">
 	<section id="rowOne">
 		<ul>

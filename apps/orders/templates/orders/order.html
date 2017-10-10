@@ -12,6 +12,10 @@
 			
 		</nav>
 	</article>
+	<section id="imgRight">
+		<img src="http://www.stevensegallery.com/g/200/300" alt="">
+		<img src="http://www.fillmurray.com/200/300" alt="">
+	</section>
 	<section>
 		<form action="{% url 'orders:submit' %}" method="POST">
 			{% csrf_token %}
@@ -31,6 +35,10 @@
 			<input type="text">
 			<input type="submit" name="submit" value="Place Order">
 		</form>
+	</section>
+	<section id="imgLeft">
+		<img src="http://www.fillmurray.com/200/300" alt="">
+		<img src="https://www.placecage.com/200/300" alt="">
 	</section>
 </body>
 </html>
