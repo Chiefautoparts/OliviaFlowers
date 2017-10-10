@@ -14,4 +14,4 @@ def orderForm(request):
 
 def submit(request):
 	print '**OrderSubmitted**' * 250
-	return redirect('orderForm')
+	return redirect('orders:orderForm')

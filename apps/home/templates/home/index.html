@@ -13,13 +13,8 @@
 			<nav>
 				<ul>
 					<li><a href="Home">Home</a></li>
-					<li><a href="Order_Now">Order Now</a>
-						<ul>
-							<li><a href="{% url 'orders:home' %}">Flowers</a></li>
-							<li><a href="Plants">Plants</a></li>
-						</ul>
-					</li>
-					<li><a href="{% url 'orders:home' %}">Shop</a>
+					<li><a href="{% url 'orders:orderForm' %}">Place Order</a></li>
+					<li><a href="{% url 'orders:catalog' %}">Shop</a>
 						<ul>
 							<li><a href="Candles">Candles</a></li>
 							<li><a href="Candy">Candy</a></li>

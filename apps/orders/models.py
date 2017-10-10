@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
+from datetime import datetime
 from django.db import models
 
 # Create your models here.
@@ -33,4 +33,26 @@ class Product(models.Model):
 
 	def __str__(self):
 		return self.name
-	
+
+class OrderManager(models.Manager):
+	def orderValidation(self, postData):
+		status = {'valid':True, 'errors':[]}
+
+
+
+class Order(models.Model):
+	firstName = models.CharField(max_length=200)
+	lastName = models.CharField(max_length=200)
+	phoneNum = models.IntegerField()
+	email = models.CharField(max_length=255)
+	delivery = models.BooleanField(default=False)
+	address = models.CharField(max_length=255)
+	products = models.ForeignKey(Product, related_name="products")
+	date_requested = models.DateField()
+	created_at = models.DateTimeField(auto_now_add=True)
+	updated_at = models.DateTimeField(auto_now=True)
+
+	objects = OrderManager()
+
+
+
