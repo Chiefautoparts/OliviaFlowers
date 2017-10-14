@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-	font-family: 'Ruge Boogie', cursive;
+	font-family: 'Irish Grover', cursive;
 	font-size: 5em;
 	margin-left: 45%;
 }
@@ -107,6 +107,75 @@ nav li li {
 #contactUs{
 	background-color: #000000;
 	max-width: 250px;
-	max-height: 250px;
-	color: #ffffff
+	height: 20px;
+	color: #ffffff;
+	margin-bottom: 25px
+}
+
+.main {
+	margin: 10px 15px 10px 15px;
+	display: inline;
+}
+
+
+#fbook {
+	max-height: 20px; 
+	max-width: 20px;
+	position: absolute;
+	bottom: 200;
+}
+
+#twitter {
+	max-height: 20px; 
+	max-width: 20px;
+	position: relative;
+	bottom: -290;
+	left: 35;
+
+}
+
+#instagram {
+	max-height: 20px; 
+	max-width: 20px;
+	position: relative;
+	bottom: -290;
+	left: 45;
+
+	
+}
+
+#social {
+	background-color: #000FFF;
+	max-width: 300px;
+	height: 400px;
+	color: #000000;
+	border: 7px solid #000;
+	margin-bottom: 7px;
+	padding: 5px;
+	font-size: 24px;
+}
+
+#mainSect {
+	background-color: #00FF0F;
+	max-width: 650px;
+	height: 700px;
+	color: #000000;
+	border: 10px ridge #888;
+	margin-left: 40%;
+}
+
+#mainSect p {
+	font-size: 28px;
+}
+
+#imgOne {
+	
+}
+
+#newProd {
+	background-color: #FF000F;
+	max-width: 300px;
+	height: 400px;
+	color: #000000;
+	border: 7px solid #000;
 }
