@@ -52,7 +52,7 @@ nav a {
 }
 
 nav a:hover {
-	background-image: url("/static/home/img/resized-nav-background.jpg");
+	background-image: url("/static/img/resized-nav-background.jpg");
 	opacity: 0.8;
 	color: #000000;
 	font-family: 'Lobster', cursive;
@@ -106,7 +106,7 @@ nav li li {
 
 #contactUs{
 	background-color: #000000;
-	max-width: 250px;
+	width: 250px;
 	height: 20px;
 	color: #ffffff;
 	margin-bottom: 25px
@@ -121,16 +121,17 @@ nav li li {
 #fbook {
 	max-height: 20px; 
 	max-width: 20px;
-	position: absolute;
-	bottom: 200;
+	position: relative;
+	bottom: -10;
+	left: 10;
 }
 
 #twitter {
 	max-height: 20px; 
 	max-width: 20px;
 	position: relative;
-	bottom: -290;
-	left: 35;
+	bottom: -10;
+	left: 20;
 
 }
 
@@ -138,9 +139,9 @@ nav li li {
 	max-height: 20px; 
 	max-width: 20px;
 	position: relative;
-	bottom: -290;
-	left: 45;
-
+	bottom: -10;
+	left: 30;
+	margin: 0px auto;
 	
 }
 
@@ -149,10 +150,12 @@ nav li li {
 	max-width: 300px;
 	height: 400px;
 	color: #000000;
-	border: 7px solid #000;
+	border: 7px ridge #888;
 	margin-bottom: 7px;
 	padding: 5px;
-	font-size: 24px;
+	font-size: 36px;
+	font-weight: bolder;
+	font-family: 'Griffy', cursive;
 }
 
 #mainSect {
@@ -165,11 +168,20 @@ nav li li {
 }
 
 #mainSect p {
-	font-size: 28px;
+	font-family: 'Butterfly Kids', cursive;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
 }
 
 #imgOne {
-	
+	border: 3px outset #444;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+#imgTwo {
+	border: 4px outset #444;
 }
 
 #newProd {
@@ -177,5 +189,25 @@ nav li li {
 	max-width: 300px;
 	height: 400px;
 	color: #000000;
-	border: 7px solid #000;
+	border: 7px ridge #888;
+}
+
+#widget p {
+	font-size: 18px;
+}
+
+#widget img {
+	height: 175px;
+	width: 175px;
+	margin-left: 20%;
+}
+
+#wouldYou {
+	position: relative;
+	left: 39%;
+	bottom: 20px;
+	width: 100px;
+	height: 125px;
+	border: 4px inset #FFF;
+	
 }

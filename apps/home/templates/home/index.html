@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<title>Flowers For The People</title>
 	{% load staticfiles %}
-	<link rel="stylesheet" href="{% static 'home/css/index.css' %}">
+	<link rel="stylesheet" href="{% static "css/index.css" %}">
 	<link href="https://fonts.googleapis.com/css?family=Bonbon|Butterfly+Kids|Delius+Swash+Caps|Flavors|Griffy|Irish+Grover|Mystery+Quest|Ruge+Boogie|Sail|Spirax|Lobster" rel="stylesheet">
 </head>
 <body>
@@ -13,16 +13,12 @@
 			<nav>
 				<ul>
 					<li><a href="Home">Home</a></li>
-					<li><a href="{% url 'orders:orderForm' %}">Place Order</a></li>
-					<li><a href="{% url 'orders:catalog' %}">Shop</a>
+					
+					<li><a href="#">Shop</a>
 						<ul>
-							<li><a href="Candles">Candles</a></li>
-							<li><a href="Candy">Candy</a></li>
-							<li><a href="Cards">Cards</a></li>
-							<li><a href="Containers">Containers</a></li>
-							<li><a href="Books">Books</a></li>
-							<li><a href="Vintage">Vintage</a></li>
-							<li><a href="Other_Goods">Other Goods</a></li>
+							<li><a href="{% url "orders:orderForm" %}">Place Order</a></li>
+							<li><a href="{% url "orders:catalog" %}">Browse Catalog</a></li>
+							<li><a href="#">Your Cart</a></li>
 						</ul>
 					</li>
 					<li><a href="{% url 'services:main' %}">Services</a>
@@ -52,16 +48,22 @@
 	<section class="main">
 		<div id="social">
 			<p>Social Media Block</p>
+				<div id="widget">
+					<p>place holder for widget</p>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCIvYLj70g4GkBjLat9IpiuO-N7Hei1Ri2x_AzUuEdVk_PxtrFvA" alt="">
+				</div>
 			
-				<img id="fbook"src="{% static "home/img/facebook.png"%}" alt="">
-				<img id="twitter"src="{% static "home/img/twitter.png" %}" alt="">
-				<img id="instagram"src="{% static "home/img/Instagram.jpg" %}" alt="">
+				<img id="fbook"src="{% static "img/facebook.png"%}" alt="">
+				<img id="twitter"src="{% static "img/twitter.png" %}" alt="">
+				<img id="instagram"src="{% static "img/Instagram.jpg" %}" alt="">
 			
 		</div>
 		<div id="mainSect">
 			<p>Seasonal Product? Featured Product?</p>
 			<img id="imgOne" src="http://www.fillmurray.com/140/100" alt="">
 			<img id="imgTwo" src="http://www.fillmurray.com/200/300" alt="">
+			<p id="lookAtit">Would You Just Look At That</p>
+			<img id="wouldYou" src="https://pbs.twimg.com/media/CGmXIhBUAAAq-yQ.jpg" alt="">
 		</div>
 		<div id="newProd">
 			<p>Newest Designs</p>
