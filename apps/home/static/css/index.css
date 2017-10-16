@@ -185,6 +185,9 @@ nav li li {
 }
 
 #newProd {
+	font-family: 'Butterfly Kids', cursive;
+	font-size: 22px;
+	text-align: center;
 	background-color: #FF000F;
 	max-width: 300px;
 	height: 400px;
@@ -208,6 +211,9 @@ nav li li {
 	bottom: 20px;
 	width: 100px;
 	height: 125px;
-	border: 4px inset #FFF;
-	
+	border: 4px inset #FFF;	
+}
+
+.lowerText {
+	background-color: #FF670D;
 }
