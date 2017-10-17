@@ -21,6 +21,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('apps.home.urls', namespace='home')),
     url(r'^about', include('apps.about.urls', namespace='about')),
-    url(r'^order', include('apps.orders.urls', namespace='orders')),
-    url(r'^service', include('apps.services.urls', namespace='services'))
+    url(r'^service', include('apps.services.urls', namespace='services')),
+    url(r'^cart/', include('myshop.cart.urls', namespace='cart')),  
+    url(r'^orders/', include('myshop.orders.urls', namespace='orders')),
+    url(r'^shop/', include('myshop.shop.urls', namespace='shop')),
 ]
