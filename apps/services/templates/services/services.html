@@ -16,7 +16,7 @@
 		<h1>Available Services</h1>
 		<nav>
 			<ul>
-				<li><a>Unique Designs</a></li>
+				<li><a href="{% url "" %}">Unique Designs</a></li>
 				<li><a>Weddings</a></li>
 				<li><a>Events</a>
 					<ul>
@@ -27,6 +27,14 @@
 				<li><a>Special Seasonal Items</a></li>
 			</ul>
 		</nav>
+		<li><a href="{% url 'services:main' %}">Services</a>
+						<ul>
+							<li><a href="delivers">Daily Deliveries</a></li>
+							<li><a href="designs">Botanical Designs</a></li>
+							<li><a href="Estate">Estate Services</a></li>
+							<li><a href="Corporate">Corporate Services</a></li>
+							<li><a href="Weddings">Weddings &amp; Events</a></li>
+							<li><a href="Holiday_Decor">Holiday Decor</a></li>
 	</article>
 	<article class="serviceBody">
 		<section id="designs">

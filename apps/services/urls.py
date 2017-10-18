@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from . import views
 from django.contrib import messages
-from ..orders.models import Product
+#from ..orders.models import Product
 
 app_name='services'
 urlpatterns = [
