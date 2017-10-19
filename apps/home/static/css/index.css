@@ -112,6 +112,15 @@ nav li li {
 	margin-bottom: 25px
 }
 
+#storeHype h1{
+	font-size: 28px;
+	color: #FF3E;
+}
+#storeHype h1 a {
+	color: #15c;
+	text-decoration: underline;
+}
+
 .main {
 	margin: 10px 15px 10px 15px;
 	display: inline;
