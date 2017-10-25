@@ -1,0 +1,19 @@
+{% extends "myshop/shop/base.html" %}
+{% load static %}
+
+{% block navbar %}
+	<nav>
+		<ul>
+			<li><a href="{% url 'home:home' %}">Home</a></li>
+			<li>Shop<ul>
+				<li><a href="{% url 'shop:product_list' %}">Browse</a></li>
+				<li><a href="{% url 'order:order_create' %}">Place Order</a></li>
+				<li><a href="{% url 'cart:cart_detail' %}"></a></li>
+			</ul></li>
+			<li><a href="{% url 'services:main' %}">Services</a></li>
+			<li><a href="{% url 'about:index' ">Our Tale</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Press</a></li>
+		</ul>
+	</nav>
+{% endblock %}
