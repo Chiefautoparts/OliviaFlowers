@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myshop.cart',
+    'paypal.standard.ipn',
+    'myshop.payment',
     'myshop.orders',
     'myshop.shop',
 ]
@@ -132,3 +134,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 CART_SESSION_ID = 'cart'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+PAYPAL_RECEIVER_EMAIL = 'chiefautoparts@outlook.com'
+PAYPAL_TEST = True
