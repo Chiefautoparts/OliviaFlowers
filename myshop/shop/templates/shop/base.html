@@ -10,6 +10,10 @@
 		<div id="header">
 			<a href="/" class="logo">My shop</a>
 		</div>
+		<div id="navbar">
+			{% block navbar %}
+			{% endblock %}
+		</div>
 		<div id="subheader">
 			<div class="cart">
 				{% with total_items=cart|length %}
