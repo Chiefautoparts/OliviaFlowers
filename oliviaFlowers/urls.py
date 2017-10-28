@@ -24,5 +24,7 @@ urlpatterns = [
     url(r'^service', include('apps.services.urls', namespace='services')),
     url(r'^cart/', include('myshop.cart.urls', namespace='cart')),  
     url(r'^orders/', include('myshop.orders.urls', namespace='orders')),
+    url(r'^paypal/', include('paypal.standard.ipn.urls')),
+    url(r'^payment/', include('myshop.payment.urls', namespace='payment')),
     url(r'^shop/', include('myshop.shop.urls', namespace='shop')),
 ]

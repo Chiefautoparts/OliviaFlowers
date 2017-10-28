@@ -1,10 +1,10 @@
-from decimal import Deciaml
+from decimal import Decimal
 from django.conf import settings
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, get_object_or_404
-from paypal.standard.models import PayPalPaymentsForm
-from myshop.order.models import order
-from django.views.decorators.csrf import scrf_exempt
+from paypal.standard.forms import PayPalPaymentsForm
+from myshop.orders.models import Order
+from django.views.decorators.csrf import csrf_exempt
 
 def payment_process(request):
 	order_id = request.session.get('order_id')
